@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"golang-cli/password"
+	"github.com/fajarutamaa/generate-password/password"
 )
 
 var generateCmd = &cobra.Command{
