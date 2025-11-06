@@ -41,8 +41,8 @@ func Generate(length int, includeSymbols, includeNumbers, includeUppercase bool)
 }
 
 func getRandom(chars string) (byte, error) {
-	max := big.NewInt(int64(len(chars)))
-	num, err := rand.Int(rand.Reader, max)
+	maxLen := big.NewInt(int64(len(chars)))
+	num, err := rand.Int(rand.Reader, maxLen)
 	if err != nil {
 		return 0, err
 	}
